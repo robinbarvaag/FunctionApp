@@ -1,0 +1,8 @@
+
+- task: AzureFunctionApp@1
+  inputs:
+    azureSubscription: 'Free Trial(7b67be29-d9db-4ba9-8091-a500459b69a4)'
+    appType: 'functionApp'
+    appName: 'func-app-http-example'
+    package: '$(System.DefaultWorkingDirectory)/**/*.zip'
+    deploymentMethod: 'auto'
